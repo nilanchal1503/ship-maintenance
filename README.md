@@ -13,6 +13,7 @@ Welcome to the **Ship Maintenance Dashboard** – a React-based frontend applica
 ## 📁 Project Structure
 
 /ship-maintenance
+
 ├── /public
 ├── /src
 │ ├── /components
