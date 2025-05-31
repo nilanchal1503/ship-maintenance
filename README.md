@@ -1,70 +1,138 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🚢 Ship Maintenance Management System
 
-## Available Scripts
+Welcome to the **Ship Maintenance Dashboard** – a React-based frontend application designed to manage and monitor ships, their components, maintenance schedules, and job progress in a clean and intuitive interface.
 
-In the project directory, you can run:
+## 🌐 Live Demo
 
-### `npm start`
+👉 [View Deployed App](https://ship-maintenance.vercel.app)  
+👉 [GitHub Repository](https://github.com/nilanchal1503/ship-maintenance)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure
 
-### `npm test`
+/ship-maintenance
+├── /public
+├── /src
+│ ├── /components
+│ ├── /pages
+│ ├── App.jsx
+│ ├── Management.jsx
+│ ├── dashboard.jsx
+│ └── ...
+├── package.json
+└── README.md
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚙️ Setup & Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+- Node.js and npm installed
+- Git installed
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Steps
 
-### `npm run eject`
+```bash
+# 1. Clone the repo
+git clone https://github.com/nilanchal1503/ship-maintenance.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# 2. Navigate into the project
+cd ship-maintenance
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 3. Install dependencies
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# 4. Start the local development server
+npm start
+The app will run on: http://localhost:3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Application Architecture Overview
+The application is structured around a single-page interface with modular navigation:
 
-## Learn More
+Login Page: User selects role (Admin/Inspector/Engineer) → navigates to dashboard.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Dashboard: Displays total ships, pending jobs, maintenance status using cards and charts.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Ships Page: Create, read, update, and delete ship records.
 
-### Code Splitting
+Components Page: Add and manage ship components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Jobs Page: Track jobs in progress and completed tasks.
 
-### Analyzing the Bundle Size
+Calendar Page: View maintenance schedules by date.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Notifications Page: Placeholder for future alert system.
 
-### Making a Progressive Web App
+The Management.jsx file manages global state using useState and localStorage.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📦 State Management
+State is managed using React's built-in useState and useEffect.
 
-### Advanced Configuration
+Ship and component data are persisted using localStorage.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Conditional rendering handles the current active view (ships, components, jobs, etc.)
 
-### Deployment
+🔐 Role-based Interface
+Upon login:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+If the user selects Admin, "Admin" appears in the navigation bar.
 
-### `npm run build` fails to minify
+If Inspector is selected, "Inspector" shows.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If Engineer is selected, "Engineer" shows.
+
+This changes dynamically without needing a backend (currently simulated).
+
+🛠️ Technical Decisions
+React.js: Chosen for its component-based architecture and easy state handling.
+
+React Router: Used for page navigation.
+
+LocalStorage: Used for data persistence without a backend.
+
+Modular CSS: Styled using CSS Modules for scoped styling and maintainability.
+
+Charts & Cards: Used to enhance dashboard readability (Recharts or similar, if integrated).
+
+🐞 Known Issues / Limitations
+No backend/database — data is lost on clearing browser storage.
+
+Authentication is simulated (no real login validation).
+
+Notifications and job scheduling are placeholders (not functional yet).
+
+No role-based access control (all users can see everything for now).
+
+🚧 Future Improvements
+Integrate backend with Firebase or Node + MongoDB.
+
+Implement real user authentication and secure login.
+
+Add notifications/reminders for upcoming maintenance.
+
+Filter/search across all ships and components.
+
+Drag-and-drop scheduling with calendar.
+
+Real-time updates using WebSockets.
+
+👨‍💻 Author
+Nilanchal
+Frontend Developer | Student at NSUT
+GitHub: nilanchal1503
+
+📄 License
+This project is licensed under the MIT License.
+
+
+
+This Ship Maintenance Management System is a fully functional frontend application built using React that allows users to manage a fleet of ships, monitor maintenance activities, and track ongoing jobs. The system starts with a login page where users select their role—Admin, Inspector, or Engineer. Based on the role selected, the navigation bar dynamically displays the user's identity to tailor the interface. Once logged in, users land on a dashboard that gives an overview of total ships, overdue maintenance tasks, and job statuses using visual cards and charts.
+
+The core of the application revolves around managing ships and their related data. Users can view a list of all ships, add new ones, edit existing entries, or delete them. Each ship entry includes important details such as IMO number, flag, maintenance status, and associated components. Similarly, the Components page allows the user to manage ship components like engines, radars, etc., with add/edit/delete functionalities.
+
+The Jobs page tracks maintenance or repair tasks, showing which jobs are currently in progress and which are completed. There's also a Calendar page where all maintenance jobs are plotted by date, providing a clear visual schedule. Although notifications are not functional yet, the page is in place for future enhancements.
+
+All data is managed using React’s state management (useState) and persisted in the browser’s localStorage, so even after a page refresh, the information remains intact. This project demonstrates how a modular, role-aware maintenance management system can be built purely on the frontend, with a responsive UI and smooth navigation experience.
