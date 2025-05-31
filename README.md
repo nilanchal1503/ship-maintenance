@@ -1,16 +1,16 @@
 
-# 🚢 Ship Maintenance Management System
+# Ship Maintenance Management System
 
 Welcome to the **Ship Maintenance Dashboard** – a React-based frontend application designed to manage and monitor ships, their components, maintenance schedules, and job progress in a clean and intuitive interface.
 
-## 🌐 Live Demo
+## Live Demo
 
 👉 [View Deployed App](https://ship-maintenance.vercel.app)  
 👉 [GitHub Repository](https://github.com/nilanchal1503/ship-maintenance)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 /ship-maintenance
 
@@ -35,7 +35,7 @@ Welcome to the **Ship Maintenance Dashboard** – a React-based frontend applica
 - Git installed
 
 ### Steps
-
+```bash
 # 1. Clone the repo
 git clone https://github.com/nilanchal1503/ship-maintenance.git
 
@@ -51,8 +51,7 @@ The app will run on: http://localhost:3000
 
 
 
-
-Application Architecture Overview
+# Application Architecture Overview
 The application is structured around a single-page interface with modular navigation:
 
 Login Page: User selects role (Admin/Inspector/Engineer) → navigates to dashboard.
@@ -71,14 +70,18 @@ Notifications Page: Placeholder for future alert system.
 
 The Management.jsx file manages global state using useState and localStorage.
 
-📦 State Management
+
+
+# State Management
 State is managed using React's built-in useState and useEffect.
 
 Ship and component data are persisted using localStorage.
 
 Conditional rendering handles the current active view (ships, components, jobs, etc.)
 
-🔐 Role-based Interface
+
+
+# Role-based Interface
 Upon login:
 
 If the user selects Admin, "Admin" appears in the navigation bar.
@@ -100,7 +103,9 @@ Modular CSS: Styled using CSS Modules for scoped styling and maintainability.
 
 Charts & Cards: Used to enhance dashboard readability (Recharts or similar, if integrated).
 
-🐞 Known Issues / Limitations
+
+
+# Known Issues / Limitations
 No backend/database — data is lost on clearing browser storage.
 
 Authentication is simulated (no real login validation).
@@ -109,7 +114,9 @@ Notifications and job scheduling are placeholders (not functional yet).
 
 No role-based access control (all users can see everything for now).
 
-🚧 Future Improvements
+
+
+# Future Improvements
 Integrate backend with Firebase or Node + MongoDB.
 
 Implement real user authentication and secure login.
@@ -122,12 +129,12 @@ Drag-and-drop scheduling with calendar.
 
 Real-time updates using WebSockets.
 
-👨‍💻 Author
+# Author
 Nilanchal
 Frontend Developer | Student at NSUT
 GitHub: nilanchal1503
 
-📄 License
+# License
 This project is licensed under the MIT License.
 
 
