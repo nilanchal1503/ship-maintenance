@@ -51,7 +51,7 @@ The app will run on: http://localhost:3000
 
 
 
-#### Application Architecture Overview
+# Application Architecture Overview
 The application is structured around a single-page interface with modular navigation:
 
 Login Page: User selects role (Admin/Inspector/Engineer) → navigates to dashboard.
