@@ -36,7 +36,6 @@ Welcome to the **Ship Maintenance Dashboard** – a React-based frontend applica
 
 ### Steps
 
-```bash
 # 1. Clone the repo
 git clone https://github.com/nilanchal1503/ship-maintenance.git
 
@@ -49,6 +48,9 @@ npm install
 # 4. Start the local development server
 npm start
 The app will run on: http://localhost:3000
+
+
+
 
 Application Architecture Overview
 The application is structured around a single-page interface with modular navigation:
