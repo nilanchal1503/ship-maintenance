@@ -1,0 +1,109 @@
+/* === Dark Background without Image === */
+.loginPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b); /* dark ship-inspired gradient */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === Login Card with glassmorphism and glow === */
+.loginCard {
+  width: 100%;
+  max-width: 420px;
+  padding: 2.5rem 2rem;
+  background: rgba(30, 41, 59, 0.8);
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+  animation: cardFadeIn 1s ease-out forwards;
+  transform: translateY(30px);
+}
+
+/* === Title === */
+.loginTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #60a5fa;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px rgba(96, 165, 250, 0.6);
+}
+
+/* === Subtitle === */
+.loginSubtitle {
+  text-align: center;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* === Form === */
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #d1d5db;
+}
+
+/* === Inputs & Select === */
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  background: rgba(51, 65, 85, 0.9);
+  color: #e5e7eb;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  transition: border 0.3s, background-color 0.3s;
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: rgba(30, 41, 59, 1);
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+}
+
+/* === Button === */
+.loginButton {
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.loginButton:hover {
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.7);
+}
+
+/* === Animations === */
+@keyframes cardFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

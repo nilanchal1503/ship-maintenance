@@ -1,0 +1,192 @@
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #0f172a, #1e3a8a);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  color: #f1f5f9;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #38bdf8;
+}
+
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 5rem;
+  justify-content: space-between;
+}
+
+.input {
+  flex: 1;
+  min-width: 50px;
+  padding: 0.8rem 1rem;
+  border: 1px solid #94a3b8;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #f8fafc;
+  transition: 0.3s ease;
+  color: #0f172a;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+}
+
+.button {
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 200;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  height: fit-content;
+  align-self: center;
+}
+
+.primary {
+  background: linear-gradient(to right, #0ea5e9, #38bdf8);
+  color: #fff;
+}
+
+.primary:hover {
+  background: linear-gradient(to right, #0284c7, #0ea5e9);
+  transform: scale(1.03);
+}
+
+.listContainer {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 16px;
+  border: 1px solid #38bdf8;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.listTitle {
+  font-size: 2rem;
+  font-weight: 200;
+  color: #e0f2fe;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: 2px dashed #94a3b8;
+  padding-bottom: 2rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid #94a3b8;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.15);
+}
+
+.cardText {
+  flex: 1;
+  min-width: 260px;
+  font-size: 0.95rem;
+}
+
+.cardText p {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+  color: #e2e8f0;
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.edit,
+.delete {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit {
+  background-color: #facc15;
+  color: #1f2937;
+}
+
+.edit:hover {
+  background-color: #eab308;
+}
+
+.delete {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.delete:hover {
+  background-color: #dc2626;
+}
+.button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #007bff;
+  color: white;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.primaryBtn {
+  background-color: #28a745;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primaryBtn:hover {
+  background-color: #218838;
+}
+
+.btnRow {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+

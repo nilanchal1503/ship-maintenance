@@ -1,0 +1,136 @@
+.container {
+  padding: 2rem;
+  background-color: #0a0f1c;
+  color: #e2e8f0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* NavBar */
+.navBar {
+  display: flex;
+  gap: 11rem;
+  background: linear-gradient(to right, #1e293b, #0f172a);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #334155;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.navButton {
+  background: transparent;
+  border: none;
+  color: #cbd5e1;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navButton:hover {
+  color: #60a5fa;
+  transform: scale(1.05);
+}
+
+/* Button Row */
+.btnRow {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.primaryBtn {
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  color: #ffffff;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 6px 14px rgba(59, 130, 246, 0.4);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.primaryBtn:hover {
+  background: linear-gradient(to right, #2563eb, #4f46e5);
+  transform: translateY(-2px);
+}
+
+/* Card UI */
+.shipCard {
+  background: #1e293b;
+  padding: 1.2rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.shipCard:hover {
+  transform: scale(1.01);
+}
+
+/* Buttons */
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.editBtn {
+  background-color: #facc15;
+  color: #1e293b;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.editBtn:hover {
+  background-color: #eab308;
+}
+
+.deleteBtn {
+  background-color: #ef4444;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #dc2626;
+}
+
+/* Inputs */
+.input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #f1f5f9;
+  transition: border 0.2s ease;
+}
+
+.input:focus {
+  border-color: #60a5fa;
+  outline: none;
+}
+
+/* Headings */
+.sectionTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #38bdf8;
+  text-shadow: 1px 1px #0f172a;
+}
